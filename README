@@ -1,0 +1,62 @@
+Sure, here's a template for a README file you can use for your project:
+
+---
+
+# Hello World Node.js Application
+
+This is a simple "Hello World" Node.js application using Express.js.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed on your local machine
+- Docker installed on your local machine (optional, for running the application in a container)
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/hello-world-nodejs.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd hello-world-nodejs
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Running the Application
+
+- To run the application locally:
+
+    ```bash
+    npm start
+    ```
+
+- To run the application in a Docker container:
+
+    ```bash
+    docker build -t hello-world-nodejs .
+    docker run -p 3000:3000 hello-world-nodejs
+    ```
+
+### Usage
+
+- Open your web browser and go to [http://localhost:3000](http://localhost:3000) to see the "Hello World" message.
+
+### Deployment
+
+This application can be deployed to AWS ECS/Fargate using Terraform. Refer to the Terraform configurations in the `terraform/` directory.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue if you encounter any problems or have suggestions for improvements.
+
